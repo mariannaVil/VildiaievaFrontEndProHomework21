@@ -6,6 +6,18 @@
     <title>Document</title>
 </head>
 <body>
- 
+    <table id="table10" border = '1'></table>
+    <script>
+        let table = document.getElementById ("table10");
+        let count = 1;
+        for (let i = 0; i < 10; i++) {
+            let tr = table.insertRow(i);
+            for (let j = 0; j < 10; j++) {
+                let td = tr.insertCell(j);
+                td.innerHTML = count;
+                count ++;
+            }
+        }
+    </script>
 </body>
 </html>
